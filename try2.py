@@ -31,10 +31,10 @@ def calcPoints(c,maxIterNum = 128):
 #     return result
 
 def mandelbrot(xArea=[-2,2],yArea=[-2,2],num = 1000):
-    size = (num, num * (xArea[1]-xArea[0]) / (yArea[1] - yArea[0]))
-    Z = np.zeros((num+1,num+1),dtype=complex)
-    result = np.zeros((num+1,num+1))
-    X,Y = np.meshgrid(np.linspace(xArea[0],xArea[1],num+1),np.linspace(yArea[1],yArea[0],num+1))
+    size = (num, int(num * (xArea[1]-xArea[0]) / (yArea[1] - yArea[0])))
+    Z = np.zeros((size[0],size[1]),dtype=complex)
+    result = np.zeros((size[0],size[1]))
+    X,Y = np.meshgrid(np.linspace(xArea[0],xArea[1],size[1]),np.linspace(yArea[1],yArea[0],size[0]))
     C = X + Y*1j
     count = 0
     while count < MAX_ITER_NUM:
