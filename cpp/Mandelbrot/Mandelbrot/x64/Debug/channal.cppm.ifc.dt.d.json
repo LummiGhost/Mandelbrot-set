@@ -1,0 +1,10 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\eadde\\project\\mandelbrot-set\\cpp\\mandelbrot\\mandelbrot\\channal.cppm",
+        "ProvidedModule": "canvas",
+        "Includes": [],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
