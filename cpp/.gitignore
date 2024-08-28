@@ -1,0 +1,13 @@
+
+*.exe
+*.pdb
+*.obj
+*.log
+*.lib
+*.dll
+*.o
+*.a
+*.so
+
+*/.vs/
+*/Debug/
